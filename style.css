@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&display=swap');
+
+body{
+    margin:0;
+    background-color: black;
+    color:white;
+}
+.grisfonce{
+   background-color:  #808080;
+}
+.grisclair{
+   background-color:  #A9A9A9;
+}
+.blancfonce{
+    background-color: #DCDCDC;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.gridcontainer img {    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+}
+.img1 {
+        grid-area: img1;
+    }
+    .img2 {
+        grid-area: img2;
+    }
+    .img3 {
+        grid-area: img3;
+    }
+    .img4 {
+        grid-area: img4;
+    }
+    .img5 {
+        grid-area: img5;
+    }
+    .img6 {
+        grid-area: img6;
+    }
+    .img7 {
+        grid-area: img7;
+    }
+    .img8 {
+        grid-area: img8;
+    }
+    .img9 {
+        grid-area: img9;
+    }
+    .img10 {
+        grid-area: img10;
+    }
+    .img11 {
+        grid-area: img11;
+    }
+    .grisfonce{
+        grid-area: grisfonce;
+    }
+    .grisclair{
+        grid-area: grisclair;
+    }
+    .blancfonce{
+        grid-area: blancfonce;
+    }
+    h1{
+        grid-area:h1;
+        font-size: 70px;
+        font-weight: bold;
+        margin-top:50px;
+        font-family:  sans-serif;
+    }
+    p{
+        grid-area:p;
+        margin-top:50px;
+        font-size: 30px;
+        font-family:  sans-serif;
+    }
+    
+    
+    
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: 250px 250px 200px 150px;
+        gap: 4px;
+        grid-template-areas: 
+        " img1 img2 img3 img4 img5 img6 img7"
+        "img8 img9 img10 img11 grisfonce grisclair blancfonce"
+        "h1 h1 h1 h1 h1 h1 h1"
+        "p p p p p p p";
+    }
+    
+    
+    
+    @media screen and (min-width: 780px) {
+        .gridcontainer {
+        grid-template-rows: 250px 250px 200px ;
+        grid-template-areas: 
+        " img1 img2 img3 img4 img5 img6 img7"
+        "img8 img9 img10 img11 grisfonce grisclair blancfonce"
+        "h1 h1 h1 h1 p p p";
+    }
+    p{
+        margin-top:25px;
+    }
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        .gridcontainer {
+        height: 90vh;
+        margin-top:20px;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(9,1fr) ;
+        grid-template-rows: repeat(9,100px) ;
+        grid-template-areas: 
+        ". . . . img1 . . . ."
+        ". . grisfonce grisfonce img1 h1 img2 . ."
+        ". img3 img3 img3 img3 h1 img2 img4 ."
+        "img5 img3 img3 img3 img3 img6 img6 img4 ."
+        "img5 img3 img3 img3 img3 img6 img6 img7 img7"
+        ". img3 img3 img3 img3 grisclair img8 img8 ."
+        ". . blancfonce img9 img9 grisclair img10 p p"
+        ". . . img9 img9 img11 img10 . ."
+        ". . . . . img11 . . .";
+        
+    }
+    }
